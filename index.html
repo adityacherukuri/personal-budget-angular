@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <!-- This is an A11y Change -->
+    <a class="skip-to-content" href="#main">Skip to content</a>
     <!--This is a Semantic HTML Change -->
     <nav>
       <div class="menu">
@@ -36,6 +38,7 @@
       <div class="hero">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
+        <!-- This is an A11y Change -->
         <img
           src="bg.png"
           class="center"
@@ -46,11 +49,12 @@
       </div>
     </header>
     <!--This is a Semantic HTML Change -->
-    <main>
+    <main id="main">
       <div class="container center">
         <div class="page-area">
           <div class="text-box">
-            <h1>Stay on track</h1>
+            <!-- This is an A11y Change  Preserved h1 for only one top most main heading. changed all other h1 tags to h2 tags.-->
+            <h2>Stay on track</h2>
             <p>
               Do you know where you are spending your money? If you really stop
               to track it down, you would get surprised! Proper budget
@@ -60,7 +64,7 @@
           </div>
 
           <div class="text-box">
-            <h1>Alerts</h1>
+            <h2>Alerts</h2>
             <p>
               What if your clothing budget ended? You will get an alert. The
               goal is to never go over the budget.
@@ -68,7 +72,7 @@
           </div>
 
           <div class="text-box">
-            <h1>Results</h1>
+            <h2>Results</h2>
             <p>
               People who stick to a financial plan, budgeting every expense, get
               out of debt faster! Also, they to live happier lives... since they
@@ -78,14 +82,14 @@
           </div>
 
           <div class="text-box">
-            <h1>Free</h1>
+            <h2>Free</h2>
             <p>
               This app is free!!! And you are the only one holding your data!
             </p>
           </div>
 
           <div class="text-box">
-            <h1>Stay on track</h1>
+            <h2>Stay on track</h2>
             <p>
               Do you know where you are spending your money? If you really stop
               to track it down, you would get surprised! Proper budget
@@ -95,7 +99,7 @@
           </div>
 
           <div class="text-box">
-            <h1>Alerts</h1>
+            <h2>Alerts</h2>
             <p>
               What if your clothing budget ended? You will get an alert. The
               goal is to never go over the budget.
@@ -103,7 +107,7 @@
           </div>
 
           <div class="text-box">
-            <h1>Results</h1>
+            <h2>Results</h2>
             <p>
               People who stick to a financial plan, budgeting every expense, get
               out of debt faster! Also, they to live happier lives... since they
@@ -113,7 +117,7 @@
           </div>
 
           <div class="text-box">
-            <h1>Free</h1>
+            <h2>Free</h2>
             <p>
               This app is free!!! And you are the only one holding your data!
             </p>
@@ -125,7 +129,9 @@
     <!--This is a Semantic HTML Change -->
     <footer>
       <div class="bottom">
-        <div class="center">All rights reserved &copy; Fabio Nolasco</div>
+        <div class="center">
+          <h3>All rights reserved &copy; Fabio Nolasco</h3>
+        </div>
       </div>
     </footer>
   </body>

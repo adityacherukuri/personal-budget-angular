@@ -7,6 +7,22 @@ body {
   font-family: Tahoma, Arial;
 }
 
+.skip-to-content {
+  font-weight: bolder;
+  color: #4d5791;
+  position: absolute;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-to-content:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 div.menu {
   width: 100%;
   background-color: #4d5791;
@@ -67,7 +83,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 .container {
