@@ -59,6 +59,12 @@ div.hero h1 {
   margin-bottom: 20px;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 div.hero h2 {
   color: #4d5791;
 }
