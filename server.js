@@ -25,8 +25,14 @@ app.get("/hello", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/budget", (req, res) => {
+app.get("/budgetOne", (req, res) => {
   res.json(budget);
+});
+
+app.get("/budgetTwo", (req, res) => {
+  res.sendFile(
+    "C:/Users/kotap/Desktop/NBAD/Week03/personal-budget/budget.json"
+  );
 });
 
 app.listen(port, () => {
