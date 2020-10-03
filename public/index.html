@@ -144,7 +144,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      let dataSourceOne = {
+      var dataSourceOne = {
         datasets: [
           {
             data: [],
@@ -156,7 +156,7 @@
         labels: [],
       };
 
-      let dataSourceTwo = {
+      var dataSourceTwo = {
         datasets: [
           {
             data: [],
@@ -185,7 +185,7 @@
       }
 
       function getBudgetOne() {
-        axios.get("/budgetOne").then(function (res) {
+        axios.get("http://localhost:3000/budgetOne").then(function (res) {
           console.log(res);
           for (let i = 0; i < res.data.myBudget.length; i++) {
             dataSourceOne.datasets[0].data[i] = res.data.myBudget[i].budget;
@@ -205,7 +205,7 @@
       }
 
       function getBudgetTwo() {
-        axios.get("/budgetTwo").then(function (res) {
+        axios.get("http://localhost:3000/budgetTwo").then(function (res) {
           console.log(res);
           for (let i = 0; i < res.data.myBudget.length; i++) {
             dataSourceTwo.datasets[0].data[i] = res.data.myBudget[i].budget;
