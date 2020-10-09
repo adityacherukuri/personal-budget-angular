@@ -19,16 +19,32 @@ const budget = {
       title: "Groceries",
       budget: 200,
     },
+    {
+      title: "Entertainment",
+      budget: 100,
+    },
+    {
+      title: "Maintenance",
+      budget: 200,
+    },
+    {
+      title: "Clothing",
+      budget: 350,
+    },
+    {
+      title: "Travel",
+      budget: 350,
+    },
   ],
 };
 
-app.get("/budgetOne", (req, res) => {
-  res.json(budget);
-});
+// app.get("/budget", (req, res) => {
+//   res.json(budget);
+// });
 
-app.get("/budgetTwo", (req, res) => {
+app.get("/budget", (req, res) => {
   res.sendFile(
-    "C:/Users/kotap/Desktop/NBAD/Week03/personal-budget/budget.json"
+    "C:/Users/kotap/Desktop/NBAD/personal-budget-angular/server/budget.json"
   );
 });
 

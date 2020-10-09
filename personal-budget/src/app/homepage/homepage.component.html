@@ -1,7 +1,7 @@
 <main id="main">
   <div class="container center">
     <div class="page-area">
-      <!-- This is an A11y Change  Preserved h1 for only one top most main heading. changed all other h1 tags to h2 tags.-->
+      <pb-breadcrumbs></pb-breadcrumbs>
       <pb-article>
         <h2>Stay on track</h2>
         <div>
@@ -53,12 +53,22 @@
         </div>
       </pb-article>
 
-      <article>
-        <h2>Chart One</h2>
-        <p>
-          <canvas id="myChart" width="400" height="400"></canvas>
-        </p>
-      </article>
+      <div class="charts">
+        <article>
+          <h2>Chart</h2>
+          <p>
+            <canvas id="myChart" width="450" height="450"></canvas>
+          </p>
+        </article>
+      </div>
+      <div class="charts">
+        <article>
+          <h2>Chart with Angular</h2>
+          <p>
+            <figure id="chart"></figure>
+          </p>
+        </article>
+      </div>
     </div>
   </div>
 </main>
